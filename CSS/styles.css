@@ -1,0 +1,80 @@
+:root {
+    --gunmetal-color: #2F323A;
+    --chinese-violet-color: #77567A;
+    --french-mauve-color: #C47AC0;
+    --amaranth-pink-color: #E39EC1;
+    --tea-rose-color: #DEBAC0;
+}
+
+body {
+    background-color: var(--tea-rose-color);
+    margin: 0;
+}
+
+#header-conf {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--chinese-violet-color);
+}
+
+#header-top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#header-top-search {
+    border: 1px solid var(--gunmetal-color);
+    border-radius: 10px;
+    background-color: var(--tea-rose-color);
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    margin: 0.3rem;
+    padding-left: 0.5rem;
+    border: none;
+    border-radius: 10px;
+}
+
+#btnBusca {
+    float: right;
+    color: var(--gunmetal-color);
+    margin-top: 0.25rem;
+    padding-right: 0.5rem;
+}
+
+#header-top-menu > img {
+    width: 18vw;
+}
+
+#header-top-menu-nav {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.header-top-menu-li {
+    margin: 0 0.5rem;
+    color: var(--gunmetal-color);
+}
+
+#header-top-menu-login {
+    margin: 0;
+    color: var(--gunmetal-color);
+}
+
+#header-bottom-menu ul {
+    display: flex;
+    list-style-type:none;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-bottom-menu li {
+    margin: 0 1rem;
+    color: var(--gunmetal-color);
+}
