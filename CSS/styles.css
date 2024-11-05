@@ -8,6 +8,9 @@
 
 body {
     background-color: var(--tea-rose-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -38,6 +41,13 @@ body {
     padding-left: 0.5rem;
     border: none;
     border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#txtBusca:focus {
+    border-color: var(--gunmetal-color);
+    box-shadow: 0 0 5px var(--gunmetal-color);
 }
 
 #btnBusca {
@@ -77,4 +87,89 @@ body {
 #header-bottom-menu li {
     margin: 0 1rem;
     color: var(--gunmetal-color);
+}
+
+#footer-conf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--chinese-violet-color);
+}
+
+#footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer-menu ul {
+    list-style-type:none;
+}
+
+.footer-div {
+    flex-basis: 20%;
+}
+
+#footer-menu li {
+    /* margin: 0 1rem; */
+    color: var(--gunmetal-color);
+}
+
+#footer-app {
+    display: flex;
+    width: 100%;
+}
+
+#footer-app-container {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--french-mauve-color);
+    border-radius: 2%;
+}
+
+#footer-app-container div{
+    padding: 0.5rem;
+    margin: 0.8rem;
+}
+
+#footer-app ul{
+    padding: 0;
+    margin: 0;
+    list-style-type:none;
+}
+
+#footer-app li{
+    text-align: left;
+    padding: 0;
+    color: var(--gunmetal-color);
+}
+
+#footer-app-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#footer-qr-code {
+    flex-basis: 40%;
+    background-color: white;
+}
+
+#footer-app-store {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    border: 1px solid red;
+}
+
+.imagem {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    /* height: auto; */
 }
