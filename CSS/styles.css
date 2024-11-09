@@ -4,6 +4,7 @@
     --french-mauve-color: #C47AC0;
     --amaranth-pink-color: #E39EC1;
     --tea-rose-color: #DEBAC0;
+    --charcoal-color: #1D1F23;
 }
 
 body {
@@ -12,6 +13,15 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--charcoal-color);
+}
+
+a:hover {
+    text-shadow: 0 0 1px currentColor;
 }
 
 #header-conf {
@@ -29,15 +39,19 @@ body {
 }
 
 #header-top-search {
-    border: 1px solid var(--gunmetal-color);
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 30%;
+    border: 1px solid var(--charcoal-color);
     border-radius: 10px;
     background-color: var(--tea-rose-color);
+    padding: 0.3rem;
 }
 
 #txtBusca {
-    float: left;
+    flex: 1;
     background-color: transparent;
-    margin: 0.3rem;
     padding-left: 0.5rem;
     border: none;
     border-radius: 10px;
@@ -51,10 +65,8 @@ body {
 }
 
 #btnBusca {
-    float: right;
+    margin-left: 0.5rem;
     color: var(--gunmetal-color);
-    margin-top: 0.25rem;
-    padding-right: 0.5rem;
 }
 
 #header-top-menu > img {
@@ -69,12 +81,12 @@ body {
 
 .header-top-menu-li {
     margin: 0 0.5rem;
-    color: var(--gunmetal-color);
+    color: var(--charcoal-color);
 }
 
 #header-top-menu-login {
     margin: 0;
-    color: var(--gunmetal-color);
+    color: var(--charcoal-color);
 }
 
 #header-bottom-menu ul {
@@ -86,7 +98,7 @@ body {
 
 #header-bottom-menu li {
     margin: 0 1rem;
-    color: var(--gunmetal-color);
+    color: var(--charcoal-color);
 }
 
 #footer-conf {
@@ -116,7 +128,7 @@ body {
 }
 
 #footer-menu li {
-    color: var(--gunmetal-color);
+    color: var(--charcoal-color);
 }
 
 #footer-app {
@@ -135,6 +147,7 @@ body {
 
 #footer-app-container div{
     text-align: left;
+    margin: 0.15rem;
 }
 
 #footer-app ul{
@@ -146,7 +159,7 @@ body {
 #footer-app li{
     text-align: left;
     padding: 0;
-    color: var(--gunmetal-color);
+    color: var(--charcoal-color);
 }
 
 #footer-app-img {
