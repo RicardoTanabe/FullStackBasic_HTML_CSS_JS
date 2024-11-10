@@ -84,10 +84,29 @@ a:hover {
     color: var(--charcoal-color);
 }
 
+.header-icon {
+    transition: background-color 0.2s ease-in-out box-shadow 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+.header-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.1);
+}
+
 #header-top-menu-login {
-    margin: 0;
+    margin: 0 0.5rem;
     color: var(--charcoal-color);
 }
+
+/* .header-top-menu-icon {
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 100%;
+}
+
+.header-top-menu-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+} */
 
 #header-bottom-menu ul {
     display: flex;
@@ -138,7 +157,9 @@ a:hover {
 
 #footer-app-container {
     background-color: var(--french-mauve-color);
+    margin: 1rem;
     padding: 1rem;
+    box-sizing: border-box;
     border-radius: 2%;
     display: flex;
     flex-direction: column;
