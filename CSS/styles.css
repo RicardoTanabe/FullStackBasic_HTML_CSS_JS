@@ -5,6 +5,7 @@
     --amaranth-pink-color: #E39EC1;
     --tea-rose-color: #DEBAC0;
     --charcoal-color: #1D1F23;
+    --white-transparent-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -90,23 +91,14 @@ a:hover {
 }
 
 .header-icon:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.1);
+    background-color: var(--white-transparent-color);
+    box-shadow: 0 0 5px 5px var(--white-transparent-color);
 }
 
 #header-top-menu-login {
     margin: 0 0.5rem;
     color: var(--charcoal-color);
 }
-
-/* .header-top-menu-icon {
-    transition: background-color 0.2s ease-in-out;
-    border-radius: 100%;
-}
-
-.header-top-menu-icon:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-} */
 
 #header-bottom-menu ul {
     display: flex;
