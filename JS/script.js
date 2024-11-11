@@ -6,22 +6,15 @@ document.getElementById("footer").innerHTML = fetch('MODEL/footer.html')
     .then(response => response.text())
     .then(data => document.getElementById("footer").innerHTML = data);
 
-const menuList = ["cachorro", "gato", "passaro", "peixe",
-    "outrospets", "casaejardim", "promocoes", "servicos", "clubes"]
+const menu = document.querySelector("main");
+const main = document.querySelector("#main");
 
-const menuListDict = {
-    "cachorro": ["racao", "petiscoseossos", "tapetesfraldasebanheiros",
-        "farmacia"],
-    "gato": [],
-    "passaro": [],
-    "peixe": [],
-    "outrospets": [],
-    "casaejardim": [],
-    "promocoes": [],
-    "servicos": [],
-    "clubes": [],
-    "racao": ["racaoseca", "racaoumida", "vertodos"],
-    "petiscoseossos": ["cuidadooral", "petiscosnaturais", "vertodos"],
-    "tapetesfraldasebanheiros": ["tapeteshigienicos", "fraldas", "vertodos"],
-    "farmacia": ["antipulgasecarrapatos", "demaismedicamentos", "vertodos"],
-}
+menu.addEventListener("mouseenter", () => {
+    console.log("Overlay ativado");
+    main.classList.add("overlay-active");
+});
+
+menu.addEventListener("mouseleave", () => {
+    console.log("Overlay desativado");
+    main.classList.remove("overlay-active");
+});
