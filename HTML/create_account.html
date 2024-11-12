@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fundamentos de FullStack: Desenvolvimento de Páginas Dinâmica com HTML, CSS e JS">
+    <link rel="stylesheet" href="../CSS/styles.css"/>
+    <link rel="stylesheet" href="../CSS/simple_footer.css"/>
+    <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
+    <script src="../JS/script.js" defer></script>
+    <title>build dinamic webpage</title>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <div class="form-container">
+            <form action="">
+                <input type="radio" name="fisicajuridica" id="pessoafisica" value="pessoafisica">
+                <label for="pessoafisica">Pessoa Física</label>
+                <input type="radio" name="fisicajuridica" id="pessoajuridica" value="pessoajuridica">
+                <label for="pessoajuridica">Pessoa Jurídica</label><br />
+                <hr />
+                <label class="labelStyle" for="name">Nome e sobrenome</label><br />
+                <input class="inputStyle" type="text" id="name" name="name"
+                    placeholder="Digite seu nome e sobrenome"><br />
+                <label class="labelStyle" for="email">E-mail</label><br />
+                <input class="inputStyle" type="text" id="email" name="email"
+                    placeholder="Digite seu e-mail"><br />
+                <label class="labelStyle" for="celular">Celular</label><br />
+                <input class="inputStyle" type="text" id="celular" name="celular"
+                    placeholder="DDD + Celular"><br />
+                <label class="labelStyle" for="fone">Telefone <span class="opcional">(opcional)</span></label><br />
+                <input class="inputStyle" type="text" id="fone" name="fone"
+                    placeholder="DDD + Telefone"><br />
+                <label class="labelStyle" for="sexo">Sexo <span class="opcional">(opcional)</span></label><br />
+                <select class="inputStyle" name="sexo" id="sexo">
+                    <option value="">Escolha o sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select><br />
+                <label class="labelStyle" for="nascimento">Data de nascimento <span class="opcional">(opcional)</span></label><br />
+                <input class="inputStyle" type="text" id="nascimento" name="nascimento"
+                    placeholder="Digite a data de nascimento"><br />
+                <label class="labelStyle" for="cpf">CPF</label><br />
+                <input class="inputStyle" type="text" id="cpf" name="cpf"
+                    placeholder="Digite o seu CPF"><br />
+                <label class="labelStyle" for="senha">Senha</label><br />
+                <input class="inputStyle" type="password" id="senha" name="senha"
+                    placeholder="Digite sua senha"><br />
+                <label class="labelStyle" for="confsenha">Confirmar a senha</label><br />
+                <input class="inputStyle" type="password" id="confsenha" name="confsenha"
+                    placeholder="Confirme sua senha"><br />
+                <input class="inputStyle inputSubmit" type="submit" value="Cadastrar" />
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        Copyright 2024 Pet Center Comércio e Participações S/A<br />
+        Todos os direitos reservados
+    </footer>
+</body>
+</html>
