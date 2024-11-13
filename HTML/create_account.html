@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fundamentos de FullStack: Desenvolvimento de Páginas Dinâmica com HTML, CSS e JS">
-    <link rel="stylesheet" href="../CSS/styles.css"/>
+    <!-- <link rel="stylesheet" href="../CSS/styles.css"/> -->
     <link rel="stylesheet" href="../CSS/simple_footer.css"/>
     <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
     <script src="../JS/script.js" defer></script>
     <title>build dinamic webpage</title>
 </head>
 <body>
-    <header id="header"></header>
+    <header>
+        <div id="header-conf">
+            <a href="index.html">
+                <img id="logo" src="../../petshop-logo.png" alt="pet Logo" />
+            </a>
+            <div id="header-security">
+                <span id="header-separete">|</span> <i class="fi fi-rr-lock"></i> Ambiente Seguro
+            </div>
+        </div>
+    </header>
 
     <main>
         <div class="form-container">
             <form action="">
-                <input type="radio" name="fisicajuridica" id="pessoafisica" value="pessoafisica">
-                <label for="pessoafisica">Pessoa Física</label>
-                <input type="radio" name="fisicajuridica" id="pessoajuridica" value="pessoajuridica">
-                <label for="pessoajuridica">Pessoa Jurídica</label><br />
+                <h2>Crie sua conta</h2>
+                <div id="radio-option">
+                    <input type="radio" name="fisicajuridica" id="pessoafisica" value="pessoafisica">
+                    <label for="pessoafisica">Pessoa Física</label>
+                    <input type="radio" name="fisicajuridica" id="pessoajuridica" value="pessoajuridica">
+                    <label for="pessoajuridica">Pessoa Jurídica</label><br />
+                </div>
                 <hr />
                 <label class="labelStyle" for="name">Nome e sobrenome</label><br />
                 <input class="inputStyle" type="text" id="name" name="name"
@@ -45,14 +57,26 @@
                 <label class="labelStyle" for="cpf">CPF</label><br />
                 <input class="inputStyle" type="text" id="cpf" name="cpf"
                     placeholder="Digite o seu CPF"><br />
-                <label class="labelStyle" for="senha">Senha</label><br />
-                <input class="inputStyle" type="password" id="senha" name="senha"
-                    placeholder="Digite sua senha"><br />
-                <label class="labelStyle" for="confsenha">Confirmar a senha</label><br />
-                <input class="inputStyle" type="password" id="confsenha" name="confsenha"
-                    placeholder="Confirme sua senha"><br />
+                <div id="password-form">
+                    <div>
+                        <label class="labelStyle" for="senha">Senha</label><br />
+                        <input class="inputStyle" type="password" id="senha" name="senha"
+                            placeholder="Digite sua senha">
+                    </div>
+                    <div>
+                        <label class="labelStyle" for="confsenha">Confirmar a senha</label><br />
+                    <input class="inputStyle" type="password" id="confsenha" name="confsenha"
+                        placeholder="Confirme sua senha">
+                    </div>
+                </div>
                 <input class="inputStyle inputSubmit" type="submit" value="Cadastrar" />
             </form>
+        </div>
+        <div id="create_account_info">
+            <b>Criar uma conta é rápido, fácil e gratuito</b><br />
+            Com a sua conta Petz você tem acesso a Ofertas exclusivas, descontos, 
+            vai gerenciar a sua Assinatura Petz pode acompanhar os seus pedidos e 
+            muito mais!
         </div>
     </main>
     
