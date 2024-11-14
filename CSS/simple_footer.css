@@ -124,6 +124,14 @@ main {
     color: var(--charcoal-color);
 }
 
+/* .inputStyle:invalid {
+    border: 1px dashed red;
+}
+
+.inputStyle:valid {
+    border: 1px solid var(--french-mauve-color);;
+} */
+
 .inputStyle:focus {
     outline: none;
     border-color: var(--chinese-violet-color);
@@ -164,6 +172,19 @@ main {
 
 #password-form label{
     padding: 4px;
+}
+
+#password-info {
+    display: block;
+    margin-top: 10px;
+}
+
+#password-info > ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0 0 0;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif;
 }
 
 #create_account_info {

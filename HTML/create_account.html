@@ -7,7 +7,7 @@
     <!-- <link rel="stylesheet" href="../CSS/styles.css"/> -->
     <link rel="stylesheet" href="../CSS/simple_footer.css"/>
     <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
-    <script src="../JS/script.js" defer></script>
+    <script src="../JS/form_script.js" defer></script>
     <title>build dinamic webpage</title>
 </head>
 <body>
@@ -27,47 +27,62 @@
             <form action="">
                 <h2>Crie sua conta</h2>
                 <div id="radio-option">
-                    <input type="radio" name="fisicajuridica" id="pessoafisica" value="pessoafisica">
+                    <input type="radio" name="fisicajuridica" id="pessoafisica"
+                        value="pessoafisica" required>
                     <label for="pessoafisica">Pessoa Física</label>
-                    <input type="radio" name="fisicajuridica" id="pessoajuridica" value="pessoajuridica">
+                    <input type="radio" name="fisicajuridica" id="pessoajuridica"
+                        value="pessoajuridica" required>
                     <label for="pessoajuridica">Pessoa Jurídica</label><br />
                 </div>
                 <hr />
                 <label class="labelStyle" for="name">Nome e sobrenome</label><br />
-                <input class="inputStyle" type="text" id="name" name="name"
-                    placeholder="Digite seu nome e sobrenome"><br />
+                <input class="inputStyle" type="text" id="name" name="Nome"
+                    placeholder="Digite seu nome e sobrenome" required><br />
                 <label class="labelStyle" for="email">E-mail</label><br />
-                <input class="inputStyle" type="text" id="email" name="email"
-                    placeholder="Digite seu e-mail"><br />
+                <input class="inputStyle" type="text" id="email" name="E-mail"
+                    placeholder="Digite seu e-mail" required><br />
                 <label class="labelStyle" for="celular">Celular</label><br />
-                <input class="inputStyle" type="text" id="celular" name="celular"
-                    placeholder="DDD + Celular"><br />
+                <input class="inputStyle" type="text" id="celular" name="Celular"
+                    placeholder="DDD + Celular" required><br />
                 <label class="labelStyle" for="fone">Telefone <span class="opcional">(opcional)</span></label><br />
-                <input class="inputStyle" type="text" id="fone" name="fone"
+                <input class="inputStyle" type="text" id="fone" name="Telefone"
                     placeholder="DDD + Telefone"><br />
                 <label class="labelStyle" for="sexo">Sexo <span class="opcional">(opcional)</span></label><br />
-                <select class="inputStyle" name="sexo" id="sexo">
+                <select class="inputStyle" name="Sexo" id="sexo" required>
                     <option value="">Escolha o sexo</option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
                 </select><br />
                 <label class="labelStyle" for="nascimento">Data de nascimento <span class="opcional">(opcional)</span></label><br />
-                <input class="inputStyle" type="text" id="nascimento" name="nascimento"
-                    placeholder="Digite a data de nascimento"><br />
+                <input class="inputStyle" type="text" id="nascimento" name="Nascimento"
+                    placeholder="Digite a data de nascimento" required><br />
                 <label class="labelStyle" for="cpf">CPF</label><br />
-                <input class="inputStyle" type="text" id="cpf" name="cpf"
-                    placeholder="Digite o seu CPF"><br />
+                <input class="inputStyle" type="text" id="cpf" name="CPF"
+                    placeholder="Digite o seu CPF" pattern="[0-9]{11}" required><br />
                 <div id="password-form">
                     <div>
                         <label class="labelStyle" for="senha">Senha</label><br />
-                        <input class="inputStyle" type="password" id="senha" name="senha"
-                            placeholder="Digite sua senha">
+                        <input class="inputStyle" type="password" id="senha" name="Senha"
+                            placeholder="Digite sua senha" required>
                     </div>
                     <div>
                         <label class="labelStyle" for="confsenha">Confirmar a senha</label><br />
-                    <input class="inputStyle" type="password" id="confsenha" name="confsenha"
-                        placeholder="Confirme sua senha">
+                    <input class="inputStyle" type="password" id="confsenha" name="Confirmação de senha"
+                        placeholder="Confirme sua senha" required>
                     </div>
+                </div>
+                <div id="password-info">
+                    <label class="labelStyle" for="infosenha">Padrão de Senha</label>
+                    <ul id="infosenha">
+                        <div>
+                            <li>Mínimo 8 caracteres</li>
+                            <li>Letra Minúscula</li>
+                        </div>
+                        <div>
+                            <li>Letra Maiúscula</li>
+                            <li>Números</li>
+                        </div>
+                    </ul>
                 </div>
                 <input class="inputStyle inputSubmit" type="submit" value="Cadastrar" />
             </form>
