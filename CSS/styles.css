@@ -5,6 +5,7 @@
     --amaranth-pink-color: #E39EC1;
     --tea-rose-color: #DEBAC0;
     --charcoal-color: #1D1F23;
+    --seashell-color: #FFF8FB;
     --white-transparent-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -194,6 +195,36 @@ main::before {
 
 main.overlay-active::before {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dogContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: var(--chinese-violet-color);
+    border: 1px solid var(--charcoal-color);
+    color: var(--tea-rose-color);
+    border-radius: 3px;
+    margin: 15px;
+    transition: background-color 0.5s ease, border 0.5s ease;
+}
+
+.button:hover {
+    background-color: var(--gunmetal-color);
+    border: 1px solid var(--french-mauve-color);
+}
+
+.dog-image {
+    max-width: 300px;
+    margin: 20px;
 }
 
 #footer-conf {

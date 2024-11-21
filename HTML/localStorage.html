@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fundamentos de FullStack: Desenvolvimento de Páginas Dinâmica com HTML, CSS e JS">
+    <!-- <link rel="stylesheet" href="../CSS/styles.css"/> -->
+    <link rel="stylesheet" href="../CSS/local_storage_style.css"/>
+    <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
+    <script src="../JS/local_storage_script.js" defer></script>
+    <title>build dinamic webpage</title>
+</head>
+<body>
+    <header>
+        <div id="header-conf">
+            <a href="index.html">
+                <img id="logo" src="../../petshop-logo.png" alt="pet Logo" />
+            </a>
+            <div id="header-security">
+                <span id="header-separete">|</span> <i class="fi fi-rr-lock"></i> Ambiente Seguro
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-container">
+            <h2>Página sobre Armazenamento Local e Persistência de Dados</h2>
+            <input type="text" id="nameInput" placeholder="Digite seu nome">
+            <div class="button-container">
+                <button id="save" class="button" onclick="saveName()">Salvar</button>
+                <button id="show" class="button" onclick="showName()">Mostrar</button>
+                <button id="remove" class="button" onclick="removeName()">Remover</button>
+            </div>
+            <div id="show-message"></div>
+        </div>
+    </main>
+    
+    <footer>
+        Copyright 2024 Pet Center Comércio e Participações S/A<br />
+        Todos os direitos reservados
+    </footer>
+</body>
+</html>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../CSS/styles.css"/>
     <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
     <script src="../JS/script.js" defer></script>
+    <script src="../JS/dog_fetch.js" defer></script>
     <title>build dinamic webpage</title>
 </head>
 <body>
@@ -14,22 +15,21 @@
     </header>
 
     <div class="slider">
+        <div>Slider de Imagens ou Carrossel</div>
         <div class="slides">
-            <div class="slide">1º slide</div>
+            <div class="slide"><a href="localStorage.html">Link para Armazenamento Local e Persistência de Dados</a></div>
             <div class="slide">2º slide</div>
             <div class="slide">3º slide</div>
             <div class="slide">4º slide</div>
         </div>
         <div id="button-container"></div>
     </div>
-
     <main>
         <div class="overlay"></div>
-        <p>Conteúdo qualquer<br /><br /><br /></p>
-        <p>Conteúdo qualquer<br /><br /><br /></p>
-        <p>Conteúdo qualquer<br /><br /><br /></p>
-        <p>Conteúdo qualquer<br /><br /><br /></p>
-        <p>Conteúdo qualquer<br /><br /><br /></p>
+        <div class="dogContainer">
+            <button class="button" onclick="fetchDogImage()">Mostrar Imagem de Cachorro</button>
+            <img id="dogImage" class="dog-image" src="" alt="Imagem de Cachorro">
+        </div>
     </main>
     
     <footer id="footer"></footer>

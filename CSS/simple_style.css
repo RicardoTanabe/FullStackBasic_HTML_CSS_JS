@@ -12,7 +12,6 @@
 
 body {
     background-color: var(--tea-rose-color);
-    /* background-color: var(--lavender-blush-color); */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -70,7 +69,6 @@ main {
     flex-direction: column;
     align-items: left;
     background-color: var(--lavender-blush-color);
-    /* background-color: var(--tea-rose-color); */
     border-radius: 8px;
     padding: 60px 20px 20px 20px;
     margin: 30px 50px;
@@ -107,21 +105,21 @@ main {
 
 #radio-option input {
     appearance: none;
+    background-color: var(--seashell-color);
+    border: 2px solid var(--french-mauve-color);
     width: 16px;
     height: 16px;
-    border: 2px solid var(--french-mauve-color);
     border-radius: 50%;
-    background-color: var(--seashell-color);
     cursor: pointer;
     position: relative;
 }
 
 #radio-option input:checked::before {
     content: '';
+    background-color: var(--chinese-violet-color);
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: var(--chinese-violet-color);
     position: absolute;
     top: 1px;
     left: 1px;
@@ -136,28 +134,28 @@ main {
 .inputStyle {
     display: block;
     background-color: var(--seashell-color);
+    border: 1px solid var(--french-mauve-color);
+    color: var(--charcoal-color);
     margin: 1px auto 0 auto;
     padding: 5px;
     width: 90%;
     box-sizing: content-box;
-    border: 1px solid var(--french-mauve-color);
     border-radius: 5px;
-    color: var(--charcoal-color);
 }
 
 .inputStyle:focus {
     outline: none;
+    background-color: var(--seashell-color);
     border-color: var(--chinese-violet-color);
     box-shadow: 0px 0px 4px rgba(119, 86, 122, 0.5);
-    background-color: var(--seashell-color);
 }
 
 .inputSubmit {
     display: block;
-    margin-top: 30px;
-    padding: 10px 0;
     background-color: var(--chinese-violet-color);
     color: var(--tea-rose-color);
+    margin-top: 30px;
+    padding: 10px 0;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -165,6 +163,23 @@ main {
 
 .inputSubmit:hover {
     background-color: var(--gunmetal-color);
+}
+
+.buttonStyle {
+    display: block;
+    background-color: var(--seashell-color);
+    border: 2px solid var(--french-mauve-color);
+    color: var(--charcoal-color);
+    margin: 0 19px;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: border-color 1s ease, background-color 1s ease;
+}
+
+.buttonStyle:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid var(--chinese-violet-color);
+    color: var(--gunmetal-color);
 }
 
 .labelStyle {
@@ -203,6 +218,28 @@ main {
 #create_account_info {
     max-width: 300px;
     text-align: justify;
+    color: var(--charcoal-color);
+}
+
+.buttonCreateAcc {
+    display: block;
+    background-color: rgba(29, 31, 35, 0);
+    border: 1px solid var(--charcoal-color);
+    color: var(--charcoal-color);
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 8px 0;
+    width: 100%;
+    transition: background-color 1s ease;
+}
+
+.buttonCreateAcc a{
+    text-decoration: none;
+    color: var(--charcoal-color);
+}
+
+.buttonCreateAcc:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .input-error {
